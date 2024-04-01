@@ -1,0 +1,46 @@
+button#speak-button {
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    z-index: 1000;
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: turquoise;
+    padding: 10px;
+    transition: transform 0.1s ease-in-out;
+}
+
+button#speak-button:hover {
+    transform: scale(1.1);
+    background-color: teal;
+    border-color: gray;
+    cursor: pointer;
+}
+
+button img {
+    width: 12px;
+}
+
+
+
+@keyframes stretch {
+    0% {
+        background-color: turquoise;
+        border-color: black;
+        transform: scale(1);
+    }
+
+    90% {
+        background-color: turquoise;
+        border-color: black;
+        transform: scale(1);
+    }
+
+    100% {
+        background-color: teal;
+        border-color: gray;
+        transform: scale(1.5);
+    }
+}
